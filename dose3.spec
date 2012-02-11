@@ -1,7 +1,7 @@
 %define name	dose3
 %define version 2.9.2
 %define subv	1
-%define release	%mkrel 2
+%define release	%mkrel 3
 
 %if %mdkversion > 200900
 %define camlzip_inc +camlzip
