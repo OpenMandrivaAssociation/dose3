@@ -32,7 +32,6 @@ Dose3 is a tool to check consistency of Mandriva Linux rpm repositories
 %setup -q -n %name-%version
 
 %build
-autoreconf
 ./configure --with-rpm5 \
 	--with-xml \
 	--with-sqlite \
