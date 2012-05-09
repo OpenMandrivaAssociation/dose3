@@ -18,7 +18,7 @@ Group:		System/Configuration/Packaging
 URL:		http://gforge.info.ucl.ac.be/frs/?group_id=35
 Source:		%name-%version.tar.gz
 BuildRequires:	ocaml ocaml-findlib ocaml-extlib ocaml-pcre ocaml-sqlite ocaml-xml-light ocaml-ounit ocaml-ocamlgraph-devel
-Buildrequires:  camlp4 librpm-devel cudf-ocaml-devel
+Buildrequires:  camlp4 rpm-devel cudf-ocaml-devel
 BuildRequires:	ocaml-camlzip-devel curl-devel ocaml-lzma ocaml-expat ocaml-sqlite-devel ocaml-xml-light-devel
 BuildRequires:	ocaml-json-wheel-devel ocaml-json-static ocaml-ocamlnet ocaml-ocamlnet-devel
 Buildrequires:	ocaml-extlib-devel ocaml-expat-devel ocaml-ocamlgraph-devel ocaml-curl-devel
