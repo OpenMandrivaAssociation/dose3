@@ -1,7 +1,6 @@
 %define name	dose3
-%define version 2.9.2
-%define subv	1
-%define release	4
+%define version 2.9.15
+%define release	1
 
 %if %mdkversion > 200900
 %define camlzip_inc +camlzip
@@ -17,8 +16,7 @@ License:	GPL
 Group:		System/Configuration/Packaging
 # No website yet
 URL:		http://gforge.info.ucl.ac.be/frs/?group_id=35
-Source:		%name-%version-%subv.tar.bz2
-Patch0:		dose3_rpm5.patch
+Source:		%name-%version.tar.gz
 BuildRequires:	ocaml ocaml-findlib ocaml-extlib ocaml-pcre ocaml-sqlite ocaml-xml-light ocaml-ounit ocaml-ocamlgraph-devel
 Buildrequires:  camlp4 librpm-devel cudf-ocaml-devel
 BuildRequires:	ocaml-camlzip-devel curl-devel ocaml-lzma ocaml-expat ocaml-sqlite-devel ocaml-xml-light-devel
@@ -31,15 +29,11 @@ Dose3 is a tool to check consistency of Mandriva Linux rpm repositories
 (that is, of hdlist files.)
 
 %prep
-%setup -q -n %name-%version-%subv
-# patch for rpm5
-%if %mdkversion > 201010
-%patch0 -p0
-%endif
+%setup -q -n %name-%version
 
 %build
 autoreconf
-./configure --with-rpm \
+./configure --with-rpm5 \
 	--with-xml \
 	--with-sqlite \
 	--with-zip \
