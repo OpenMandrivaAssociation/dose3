@@ -55,8 +55,8 @@ make
 %files
 %doc COPYING INSTALL
 %_bindir/*
-%_libdir/%name
-
+%_libdir/ocaml/%name
+%_libdir/ocaml/stublibs/*
 
 
 
