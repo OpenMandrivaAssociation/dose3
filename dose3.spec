@@ -42,11 +42,11 @@ Dose3 is a tool to check consistency of Mandriva Linux rpm repositories
 
 #	--with-postgresql \
 
-%make
+make
 
 %install
 %__rm -rf %buildroot
-%makeinstall LIBDIR=%buildroot/%_libdir BINDIR=%buildroot/%_bindir
+%makeinstall_std
 
 %clean
 %__rm -rf %buildroot
