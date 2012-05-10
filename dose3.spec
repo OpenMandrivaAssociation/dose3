@@ -17,6 +17,7 @@ Group:		System/Configuration/Packaging
 # No website yet
 URL:		http://gforge.info.ucl.ac.be/frs/?group_id=35
 Source:		%name-%version.tar.gz
+Patch0:		dose3-2.9.15-gold.patch
 BuildRequires:	ocaml ocaml-findlib ocaml-extlib ocaml-pcre ocaml-sqlite ocaml-xml-light ocaml-ounit ocaml-ocamlgraph-devel
 Buildrequires:  camlp4 rpm-devel cudf-ocaml-devel
 BuildRequires:	ocaml-camlzip-devel curl-devel ocaml-lzma ocaml-expat ocaml-sqlite-devel ocaml-xml-light-devel
@@ -30,6 +31,7 @@ Dose3 is a tool to check consistency of Mandriva Linux rpm repositories
 
 %prep
 %setup -q -n %name-%version
+%patch0 -p0
 
 %build
 ./configure --with-rpm5 \
