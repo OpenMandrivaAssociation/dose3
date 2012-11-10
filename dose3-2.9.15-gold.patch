@@ -1,0 +1,18 @@
+--- myocamlbuild.ml.orig	2012-03-29 18:29:09.000000000 +0100
++++ myocamlbuild.ml	2012-05-10 13:14:41.091496020 +0100
+@@ -44,6 +44,7 @@
+        flag ["c"; "use_rpm"; "ocamlmklib"] & S[ 
+          A"-lrpm";
+          A"-lrpmio";
++         A"-lrpmdb";
+        ];
+ 
+        (* optimization to ocaml code *)
+@@ -59,6 +60,7 @@
+        flag ["ocaml"; "use_rpm"; "link"; "native"] & S[
+          A"-cclib"; A"-lrpm";
+          A"-cclib"; A"-lrpmio";
++         A"-cclib"; A"-lrpmdb";
+          A"-ccopt"; A"-Lrpm";
+        ];
+ 
