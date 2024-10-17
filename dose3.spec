@@ -15,7 +15,7 @@ Release:	%release
 License:	GPL
 Group:		System/Configuration/Packaging
 # No website yet
-URL:		http://gforge.info.ucl.ac.be/frs/?group_id=35
+URL:		https://gforge.info.ucl.ac.be/frs/?group_id=35
 Source:		%name-%version.tar.gz
 Patch0:		dose3-2.9.15-gold.patch
 BuildRequires:	ocaml ocaml-findlib ocaml-extlib ocaml-pcre ocaml-sqlite ocaml-xml-light ocaml-ounit ocaml-ocamlgraph-devel
