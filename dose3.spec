@@ -18,6 +18,11 @@ Group:		System/Configuration/Packaging
 URL:		https://gforge.info.ucl.ac.be/frs/?group_id=35
 Source:		%name-%version.tar.gz
 Patch0:		dose3-2.9.15-gold.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	ocaml ocaml-findlib ocaml-extlib ocaml-pcre ocaml-sqlite ocaml-xml-light ocaml-ounit ocaml-ocamlgraph-devel
 Buildrequires:  camlp4 rpm-devel cudf-ocaml-devel
 BuildRequires:	ocaml-camlzip-devel curl-devel ocaml-lzma ocaml-expat ocaml-sqlite-devel ocaml-xml-light-devel
